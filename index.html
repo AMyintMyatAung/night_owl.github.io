@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Odin Project | Landing Page</title>
+
+    <!-- Tailwind cdn -->
+    <script src="./tailwind3.2.6.js"></script>
+
+    <!-- Tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lightBlue: "#3882F6",
+              grayishBlue: "#1F2937",
+              offWhite: "#F9FAF8",
+              whitishBlue: "#E5E7EB",
+            },
+            fontFamily: {
+              sans: ["Roboto", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header
+      class="px-12 md:px-18 lg:px-24 xl:px-30 bg-grayishBlue text-whitishBlue"
+    >
+      <div
+        class="w-full flex justify-between items-center py-5 md:py-8 lg:py-10"
+      >
+        <h2 class="font-extrabold text-offWhite text-2xl lg:text-3xl">
+          MM Travel
+        </h2>
+        <img
+          id="open_menu"
+          src="./images/icon-menu.svg"
+          alt="open-menu"
+          class="cursor-pointer w-10 h-6 md:hidden"
+        />
+        <nav
+          id="menu"
+          class="absolute hidden w-full top-0 right-0 h-screen md:h-auto md:w-auto flex md:flex z-10 md:relative"
+        >
+          <div class="w-1/2 bg-[#00000080] md:hidden"></div>
+          <div
+            class="w-1/2 min-w-max max-w-48 flex flex-col md:flex-row gap-5 pl-5 pr-6 bg-whitishBlue md:bg-transparent"
+          >
+            <img
+              id="close_menu"
+              src="./images/icon-menu-close.svg"
+              alt="close-menu"
+              class="w-8 h-8 self-end mr-5 mt-5 cursor-pointer md:hidden"
+            />
+            <a
+              href="#"
+              class="mt-20 md:mt-0 text-lightBlue hover:text-grayishBlue md:text-whitishBlue md:hover:text-lightBlue lg:text-lg"
+              >Booking</a
+            >
+            <a
+              href="#"
+              class="text-lightBlue hover:text-grayishBlue md:text-whitishBlue md:hover:text-lightBlue lg:text-lg"
+              >Contact</a
+            >
+            <a
+              href="#"
+              class="text-lightBlue hover:text-grayishBlue md:text-whitishBlue md:hover:text-lightBlue lg:text-lg"
+              >Log In</a
+            >
+          </div>
+        </nav>
+      </div>
+      <div
+        class="py-10 md:flex md:flex-row-reverse md:justify-between md:gap-5 lg:gap-8"
+      >
+        <figure class="w-full md:max-w-xl md:max-h-56 lg:max-h-72 xl:max-h-80">
+          <img
+            class="w-full h-full object-cover"
+            srcset="./images/hero-image-desktop.jpg"
+            alt="man-on-boat-with-fish-catcher-under-the-blue-sky-in-Inle-Lake-by-Sébastien-Goldberg"
+          />
+        </figure>
+        <div class="mt-5 md:mt-0 md:justify-start md: xl:w-[24rem]">
+          <h1 class="text-3xl lg:text-4xl xl:text-5xl font-extrabold">
+            Mingalabar from Myanmar!
+          </h1>
+          <p class="my-5 md:my-8 lg:my-10 xl:my-16 lg:text-lg xl:text-xl">
+            From the stunning ancient temples of Bagan to the serene beauty of
+            Inle Lake, Myanmar is a land of wonder and enchantment waiting to be
+            explored.Discover hidden gems and create unforgettable memories on
+            your next trip to Myanmar.
+          </p>
+          <button
+            class="bg-lightBlue px-5 py-2 rounded-lg hover:bg-offWhite hover:text-lightBlue font-bold lg:text-lg xl:text-xl"
+          >
+            Book Now
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="text-grayishBlue">
+      <article id="information" class="px-12 md:px-18 lg:px-24 xl:px-30 py-5">
+        <h2
+          class="text-xl md:text-2xl lg:text-3xl font-extrabold text-center my-5 md:mb-14"
+        >
+          Interesting Facts of Myanmar(Burma)
+        </h2>
+        <div
+          class="mb-12 md:mb-16 flex flex-col gap-10 items-center md:flex-row md:justify-between md:items-start"
+        >
+          <figure class="max-w-6 md:w-32 lg:w-48">
+            <img
+              src="./images/ethinicities.jpg"
+              alt=""
+              class="md:h-32 rounded-lg"
+            />
+            <figcaption class="text-sm lg:text-lg mt-3 lg:mt-5 text-center">
+              Myanmar is one of the most ethnically diverse countries in
+              Southeast Asia, with over 135 different ethnic groups.
+            </figcaption>
+          </figure>
+          <figure class="max-w-6 md:w-32 lg:w-48">
+            <img
+              src="./images/shwedagon-pagoda.jpg"
+              alt=""
+              class="md:h-32 rounded-lg"
+            />
+            <figcaption class="text-sm lg:text-lg mt-3 lg:mt-5 text-center">
+              The Shwedagon Pagoda in Yangon is one of the most famous and
+              revered Buddhist sites in the world, believed to be over 2,500
+              years old.
+            </figcaption>
+          </figure>
+          <figure class="max-w-6 md:w-32 lg:w-48">
+            <img
+              src="./images/jade-stone.jpg"
+              alt=""
+              class="md:h-32 rounded-lg"
+            />
+            <figcaption class="text-sm lg:text-lg mt-3 lg:mt-5 text-center">
+              Myanmar is the largest producer of jade in the world, with the
+              jade market in Mandalay being one of the most famous in the
+              country.
+            </figcaption>
+          </figure>
+          <figure class="max-w-6 md:w-32 lg:w-48">
+            <img src="./images/bagan.jpg" alt="" class="md:h-32 rounded-lg" />
+            <figcaption class="text-sm lg:text-lg mt-3 lg:mt-5 text-center">
+              The Bagan Archaeological Zone is home to over 2,000 temples and
+              pagodas, making it one of the most popular tourist destinations in
+              Myanmar.
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+      <blockquote class="bg-whitishBlue px-16 md:px-20 lg:px-26 xl:px-36 py-10">
+        <q class="text-xl md:text-2xl lg:text-3xl text-center text-italic">
+          Travel is fatal to prejudice, bigotry, and narrow-mindedness, and many
+          of our people need it sorely on these accounts. Broad, wholesome,
+          charitable views of men and things cannot be acquired by vegetating in
+          one little corner of the earth all one's lifetime.
+        </q>
+        <p class="font-bold text-end mt-5 lg:text-lg xl:text-xl">
+          - Mark Twain
+        </p>
+      </blockquote>
+      <article class="px-12 md:px-18 lg:px-24 xl:px-30 py-10">
+        <div
+          class="bg-lightBlue text-whitishBlue rounded-lg px-5 md:px-10 lg:px-16 xl:px-24 py-3 md:py-5 lg:py-8 xl:py-10 md:flex md:items-center md:justify-between"
+        >
+          <div>
+            <h3 class="text-offWhite text-lg md:text-xl lg:text-2xl font-bold">
+              Discover the Enchantment of Myanmar Today!
+            </h3>
+            <p class="text-sm my-3 lg:text-lg">
+              Don't miss the chance to discover the magic of Myanmar for
+              yourself - book your trip today!
+            </p>
+          </div>
+          <div>
+            <button
+              class="border-2 border-solid border-offWhite rounded-lg px-5 py-1 text-sm lg:text-lg font-bold hover:bg-whitishBlue hover:text-lightBlue min-w-max"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="bg-grayishBlue text-whitishBlue p-5 lg:p-8 text-center">
+      <p class="text-sm lg:text-lg">
+        Copyright &#169;
+        <a
+          href="https://github.com/AMyintMyatAung"
+          class="text-lightBlue hover:text-whitishBlue"
+          >night_owl</a
+        >
+        2023
+      </p>
+    </footer>
+  </body>
+</html>
